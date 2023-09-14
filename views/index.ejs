@@ -1,10 +1,191 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Projeto Express e EJS</title>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
-</head>
-<body>
-  <h1><%= message %></h1>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>colares</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <body>
+
+    
+   <div class="position-fixed w-100">
+  <nav class="navbar navbar-expand-lg" class="position-sticky" style="background-color: #808080;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">JÓIAS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">tipos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Lançamentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">ouro branco</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">ouro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">prata</a>
+        </li>
+      </ul>
+
+  </div>
+</nav>
+    </div>
+  
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="4000">
+      <img src="https://laecluane.luanevonstein.repl.co/colar.de.cruz.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="https://laecluane.luanevonstein.repl.co/images.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="https://laecluane.luanevonstein.repl.co/images3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br/>
+
+    <div style="height: 100px; background-color: rgba(255,255,255,0);">
+</div>
+    
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+       <img src="https://laecluane.luanevonstein.repl.co/pulseira.jpg" class="rounded-circle w-75" alt="...">
+       <h3>PRATA</h3>
+      <p>prata sempre sera a melhor opção para qualquer evnto discreto.</p>
+    </div>
+    <div class="col">
+     <img src="https://laecluane.luanevonstein.repl.co/anel.jpg" class="rounded-circle w-75" alt="...">
+     <h3>ouro</h3>
+      <p>ouro a melhor opção da noite.</p>
+    </div>
+    <div class="col">
+      <img src="https://laecluane.luanevonstein.repl.co/prata.c.jpg" class="rounded-circle w-75" alt="...">
+      <h3>ouro branco</h3>
+      <p>a pedra mais iluminada.</p>
+    </div>
+  </div>
+</div>
+      <div style="height: 100px; background-color: rgba(255,255,255,0);">
+</div>
+
+  <div class="p-3 mb-2 bg-secondary text-white" class="rounded-4">
+  
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+
+      <span class="border border-success">
+      <img src="https://laecluane.luanevonstein.repl.co/prata.2.jpg" class="rounded-4 w-75" class="img-thumbnail" alt="...">
+          </span>
+    </div>
+    <div class="col">
+      <img src="https://laecluane.luanevonstein.repl.co/imagesg.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+    </div>
+    <div class="col">
+      <img src="https://laecluane.luanevonstein.repl.co/esmeralda.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+    </div>
+    <div class="col">
+      <img src="https://laecluane.luanevonstein.repl.co/esmeralda.3.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+    </div>
+  </div>
+
+  <br/>
+
+    
+ <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <span class="border border-success">
+      <img src="https://laecluane.luanevonstein.repl.co/anel.4.jpg" class="rounded-4 w-75" class="img-thumbnail" alt="...">
+        </span>
+    </div>
+    <div class="col">
+      <img src="
+      https://laecluane.luanevonstein.repl.co/anel.dv.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+    </div>
+    <div class="col">
+      <img src="https://laecluane.luanevonstein.repl.co/imagesp.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+    </div>
+    <div class="col">
+      <img src="https://laecluane.luanevonstein.repl.co/imagesm.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+    </div>
+  </div>
+    
+</div>
+    </div>
+ </div>
+
+</div>
+<div style="height: 100px; background-color: rgba(255,255,255,0);">
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+     
+ <h2>colares</h2>
+<p>os melhores colares para qualquer momento ,evento ,e  para todos os stilos</p>
+    </div>
+    <div class="col">
+<img src="https://laecluane.luanevonstein.repl.co/images.jpg" class="img-fluid" alt="...">
+    </div>
+  </div>
+</div>
+<div style="height: 100px; background-color: rgba(255,255,255,0);"></div>
+<div class="p-3 mb-2 bg-secondary text-white" class="rounded-4">
+    
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      
+<h2>COLAR</h2>
+<p>Colar é uma peça de joalheria ou bijuteria que serve para adornar o pescoço e colo. Quando o colar fica bem próximo ao pescoço, é chamado de gargantilha. O colar pode ser feito com diversos materiais e ter diferentes formas.</p>
+    </div>
+    <div class="col">
+      
+<h2>ANEL</h2>
+<p>O anel é um adorno de luxo. Segundo os registros históricos, os faraós egípcios foram os primeiros a usar o anel com o intuito de representar a eternidade. Isso, principalmente pelo formato da joia ser circular; sem um começo ou um fim. </p>
+    </div>
+    <div class="col">
+      
+<h2>PULSEIRA</h2>
+<p>Bracelete, substantivo de dois géneros, é uma peça de joalheria ou bijuteria que serve para adornar os pulsos. Uma bracelete, ou pulseira, é usada como forma de enfeitar o pulso de uma pessoa, assim como um anel é para enfeitar o dedo de alguém.</p>
+    </div>
+<div class="col">
+     
+<h2>BRINCO</h2>
+ <p>Brincos são peças de joalheria ou bijuteria que servem para adornar as orelhas. Podem ser usados tanto por mulheres como por homens. Os brincos são uma espécie simples de piercing, atravessando o lóbulo ou qualquer outra parte externa das orelhas, ou podem ser presos externamente, por uma espécie de clipe.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>
