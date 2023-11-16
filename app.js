@@ -6,11 +6,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Olá, Mundo!' });
+  res.render('index', { produtos});
 });
 
 app.get('/produtos', (req, res) => {
-  res.render('index', { message: 'Olá, Mundo!' });
+  res.render('index', { produtos });
 });
 
 app.listen(port, () => {
@@ -30,4 +30,16 @@ const produtos = [
   {id: 10, nome: "nome do produto", preco: "400", descricao: "descricao do produto", imagem: "produto.jpg"},
 
 ]
+  //console.log(produtos[id])//
+
+  for (let produto of produtos ){
+    console.log(produto.nome)
+  }
+
+ function buscarProdutoPorId(id){
+    const produto = produtos.find(produto => produto.id == id);
+    return produto || null
+ }
+
+ console.log(buscarProdutoPorId(2))
 
