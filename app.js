@@ -5,18 +5,6 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.render('index', { produtos});
-});
-
-app.get('/produtos', (req, res) => {
-  res.render('index', { produtos });
-});
-
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
-
 const produtos = [
   {id: 1, nome: "colares de prata", preco: "300", descricao: "colares lisos", imagem: "produto.jpg"},
   {id: 2, nome: "colares de ouro", preco: "500", descricao: "colares trançados", imagem: "produto.jpg"},
@@ -30,16 +18,35 @@ const produtos = [
   {id: 10, nome: "nome do produto", preco: "400", descricao: "descricao do produto", imagem: "produto.jpg"},
 
 ]
-  //console.log(produtos[id])//
 
-  for (let produto of produtos ){
-    console.log(produto.nome)
-  }
+function buscarProdutoPorId(id){
+  const produto = produtos.find(produto => produto.id == id);
+  return produto || null
+}
 
- function buscarProdutoPorId(id){
-    const produto = produtos.find(produto => produto.id == id);
-    return produto || null
- }
+//console.log(produtos[id])//
+
+for (let produto of produtos ){
+  console.log(produto.titulo)
+}
+
+
+app.get('/', (req, res) => {
+  res.render('index', { produtos});
+});
+
+app.get('/produtos/:id', (req, res) => {
+  const produto = buscarProdutoPorID(req.params.id)
+  res.render('produtos', { produto });
+});
+
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
+});
+
+
+  
+
 
  console.log(buscarProdutoPorId(2))
 
