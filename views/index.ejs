@@ -17,10 +17,6 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <% for (let produto of produtos ){ %>
-      <h1>LUANE</h1>
-     <% } %>
   
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -102,22 +98,14 @@
   <div class="container text-center">
   <div class="row">
     <div class="col">
-
+      <% for (let produto of produtos){%>
       <span class="border border-success">
-      <img src="https://laecluane.luanevonstein.repl.co/prata.2.jpg" class="rounded-4 w-75" class="img-thumbnail" alt="...">
+      <img src="<%= produto.imagem%>" class="rounded-4 w-75" class="img-thumbnail" alt="...">
           </span>
-    </div>
-    <div class="col">
-      <img src="https://laecluane.luanevonstein.repl.co/imagesg.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
-    </div>
-    <div class="col">
-      <img src="https://laecluane.luanevonstein.repl.co/esmeralda.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
-    </div>
-    <div class="col">
-      <img src="https://laecluane.luanevonstein.repl.co/esmeralda.3.jpg" class="rounded-4 w-75" class="img-fluid" alt="...">
+          <% } %>
     </div>
   </div>
-
+  </div>
   <br/>
 
     
